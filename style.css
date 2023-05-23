@@ -8,36 +8,54 @@ body {
     align-items: center;
 }
 .container {
-    background-color: black;
+    background-color: #5A5A5A;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 350px;
     height: 500px;
     padding: 20px;
-    border-radius: 10%;
+    border-radius: 3%;
     gap: 15px;
+    z-index: 100000;
 }
 .display_screen {
     background-color: lightgray;
     flex: 1.5;
-    border-radius: 30%;
-    border: 3px solid blue;
+    border-radius: 15%;
+    border: 5px solid black;
+    font-size: 28px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+
+}
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+.not_display{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    z-index: 1;
+    border-radius: 5%;
 }
 .row1, .row2, .row3 ,.row4, .row5{
-    background-color: black;
     flex: 1;
     display: flex;
     flex-direction: row;
-    gap: 25px;
 }
 .clear, .change_sign, .change_to_percent, .divide,
 .seven, .eight, .nine, .times, .six, .five, .four, 
 .minus, .three, .two, .one, .plus, .backspace,
 .zero, .decimal, .equal{
     flex: 1;
-    border-radius: 100%;
+    border-radius: 10%;
     font-size: 30px;
-    border-color: 1px black;
+    border: 3px solid black; 
 }
 .times, .minus, .divide, .plus, .equal{
     background-color: orange;
